@@ -1,0 +1,35 @@
+{
+  "name": "Chapter One Lobby",
+  "widgets": "Fusion",
+  "colors": {
+    "Window": "#162966",
+    "WindowText": "#F4F8FF",
+    "Base": "#142453",
+    "AlternateBase": "#1C3370",
+    "ToolTipBase": "#122048",
+    "ToolTipText": "#F4F8FF",
+    "Text": "#F4F8FF",
+    "Button": "#274BA0",
+    "ButtonText": "#F4F8FF",
+    "BrightText": "#FFE44D",
+    "Link": "#91EAFF",
+    "Highlight": "#FFE44D",
+    "HighlightedText": "#142453",
+    "fadeColor": "#20346A",
+    "fadeAmount": 0.55
+  },
+  "logColors": {
+    "Message": "#E9F2FF",
+    "MessageHighlight": "#142453",
+    "Launcher": "#8FE7FF",
+    "LauncherHighlight": "#152B64",
+    "Debug": "#ADC5EC",
+    "DebugHighlight": "#142453",
+    "Warning": "#FFE875",
+    "WarningHighlight": "#40343C",
+    "Error": "#FFC0CA",
+    "ErrorHighlight": "#432640",
+    "Fatal": "#FFFFFF",
+    "FatalHighlight": "#7A3054"
+  }
+}

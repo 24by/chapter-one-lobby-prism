@@ -1,0 +1,135 @@
+/*
+SPDX-FileCopyrightText: 2026 24by
+SPDX-License-Identifier: CC0-1.0
+*/
+QToolBar#mainToolBar {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #1848AA, stop:0.64 #304CC4, stop:1 #48298D);
+    border: 0;
+    border-bottom: 1px solid #76DCFF;
+    padding: 3px;
+    spacing: 4px;
+}
+QToolBar#instanceToolBar {
+    background: #172D69;
+    border: 0;
+    padding: 4px;
+    spacing: 3px;
+}
+QToolBar QToolButton {
+    color: #F4F8FF;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 4px;
+}
+QToolBar QToolButton:hover, QToolBar QToolButton:checked {
+    background: #214793;
+    border-color: #82DAFF;
+}
+QToolBar QToolButton:pressed {
+    background: #12265D;
+}
+QToolBar QToolButton:disabled {
+    color: #9AACD2;
+}
+/* Prism's instance bar gives Launch and Export the same popup mode. */
+QToolBar#instanceToolBar QToolButton[text="&Launch"]:enabled,
+QToolBar#instanceToolBar QToolButton[text="Launch"]:enabled {
+    background: #FFE44D;
+    color: #142453;
+    font-weight: bold;
+}
+QToolBar#instanceToolBar QToolButton[text="&Launch"]:hover,
+QToolBar#instanceToolBar QToolButton[text="Launch"]:hover {
+    background: #FFF184;
+}
+QToolBar#instanceToolBar QToolButton::menu-button {
+    background: #274B99;
+    border-left: 1px solid #527BC3;
+    width: 12px;
+}
+QToolBar#instanceToolBar QToolButton::menu-button:disabled {
+    background: #1D326A;
+    border-color: #354F88;
+}
+QToolBar#instanceToolBar QToolButton[text="&Launch"]::menu-button:enabled,
+QToolBar#instanceToolBar QToolButton[text="Launch"]::menu-button:enabled {
+    background: #F4CD32;
+    border-color: #B99020;
+}
+QToolBar#instanceToolBar QToolButton[text="&Launch"]::menu-button:hover,
+QToolBar#instanceToolBar QToolButton[text="Launch"]::menu-button:hover {
+    background: #FFF184;
+}
+
+QMenu {
+    background: #162C69;
+    border: 1px solid #527BC3;
+    padding: 4px;
+}
+QMenu::item {
+    padding: 5px 24px 5px 28px;
+}
+QMenu::item:selected {
+    background: #FFE44D;
+    color: #142453;
+}
+QMenu::item:disabled {
+    color: #9AACD2;
+}
+QMenu::separator {
+    height: 1px;
+    background: #385C9E;
+    margin: 4px 7px;
+}
+
+QToolBar QToolButton, QMenu, QTabBar, QPushButton, QToolButton, QLabel {
+    font-family: "Noto Sans";
+}
+QLabel#nameLabel {
+    font-weight: bold;
+}
+QTabBar::tab {
+    color: #DCE9FF;
+    background: #1B367C;
+    border: 1px solid #3557A5;
+    padding: 6px 12px;
+}
+QTabBar::tab:hover {
+    background: #254B9E;
+}
+QTabBar::tab:selected {
+    color: #122453;
+    background: #FFE44D;
+    border-color: #FFE44D;
+}
+QTabBar::tab:disabled {
+    color: #9AACD2;
+}
+QPushButton {
+    color: #F4F8FF;
+    background: #274B99;
+    border: 1px solid #527BC3;
+    padding: 5px 10px;
+}
+QPushButton:hover, QPushButton:focus {
+    border-color: #82DAFF;
+    background: #3159AD;
+}
+QPushButton:pressed {
+    background: #153270;
+}
+QPushButton:default, QPushButton:checked {
+    color: #142453;
+    background: #FFE44D;
+    border-color: #FFF184;
+    font-weight: bold;
+}
+QPushButton:default:hover, QPushButton:checked:hover {
+    background: #FFF184;
+}
+QPushButton:disabled {
+    color: #9AACD2;
+    background: #1D326A;
+    border-color: #354F88;
+}

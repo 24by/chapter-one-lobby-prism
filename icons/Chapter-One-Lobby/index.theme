@@ -1,0 +1,11 @@
+[Icon Theme]
+Name=Chapter One Lobby
+Comment=Original launcher icons in a Chapter 1-inspired palette
+Inherits=breeze_dark
+Directories=scalable
+
+[scalable]
+Size=48
+Type=Scalable
+MinSize=12
+MaxSize=256
