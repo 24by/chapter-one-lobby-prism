@@ -43,12 +43,12 @@ QToolBar#instanceToolBar QToolButton[text="&Launch"]:hover,
 QToolBar#instanceToolBar QToolButton[text="Launch"]:hover {
     background: #FFF184;
 }
-QToolBar#instanceToolBar QToolButton::menu-button {
+QToolBar QToolButton::menu-button {
     background: #274B99;
     border-left: 1px solid #527BC3;
     width: 12px;
 }
-QToolBar#instanceToolBar QToolButton::menu-button:disabled {
+QToolBar QToolButton::menu-button:disabled {
     background: #1D326A;
     border-color: #354F88;
 }
