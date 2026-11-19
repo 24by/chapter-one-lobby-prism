@@ -21,7 +21,21 @@ for portable or scoop, open **folders → launcher root** in prism and pass that
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -PrismDir "D:\Prism Launcher"
 ```
 
-on macos or linux, run `./install.sh` instead. then restart prism and select **chapter one lobby** under widgets and icons.
+### macos and linux
+
+[download the zip](https://github.com/24by/chapter-one-lobby-prism/archive/refs/heads/main.zip) and extract it. open a terminal in the extracted folder and paste:
+
+```sh
+sh ./install.sh
+```
+
+for a custom prism folder, pass its path:
+
+```sh
+sh ./install.sh "/path/to/PrismLauncher"
+```
+
+restart prism and select **chapter one lobby** under **widgets** and **icons**.
 
 by 24by · [cc0 1.0](LICENSES/CC0-1.0.txt)
 
