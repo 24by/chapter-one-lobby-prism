@@ -7,7 +7,21 @@ SPDX-License-Identifier: CC0-1.0
 
 ![chapter one lobby preview](preview.png)
 
-run `./install.sh` on macos or linux, then restart prism and select **chapter one lobby** under widgets and icons. on windows, copy the theme and icon folders into prism’s corresponding folders.
+### windows
+
+[download the zip](https://github.com/24by/chapter-one-lobby-prism/archive/refs/heads/main.zip) and extract it. open the extracted folder in explorer, type `powershell` in the address bar, and press enter. paste this:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
+```
+
+for portable or scoop, open **folders → launcher root** in prism and pass that path:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -PrismDir "D:\Prism Launcher"
+```
+
+on macos or linux, run `./install.sh` instead. then restart prism and select **chapter one lobby** under widgets and icons.
 
 by 24by · [cc0 1.0](LICENSES/CC0-1.0.txt)
 
