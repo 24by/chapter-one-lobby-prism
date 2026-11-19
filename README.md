@@ -3,12 +3,14 @@ SPDX-FileCopyrightText: 2026 24by
 SPDX-License-Identifier: CC0-1.0
 -->
 
-# Chapter One Lobby
+# chapter one lobby
 
-A Prism Launcher theme with deep blues, a violet toolbar, and a yellow Launch button.
+![chapter one lobby preview](preview.png)
 
-![Chapter One Lobby in Prism Launcher](themes/Chapter-One-Lobby/preview.png)
+run `./install.sh` on macos or linux, then restart prism and select **chapter one lobby** under widgets and icons. on windows, copy the theme and icon folders into prism’s corresponding folders.
 
-Run `./install.sh` on macOS or Linux, then restart Prism and choose **Chapter One Lobby** for **Widgets** and **Icons**. On Windows, copy the theme and icon folders into Prism’s Widget Themes and Icon Themes folders.
+by 24by · [cc0 1.0](LICENSES/CC0-1.0.txt)
 
-Theme by 24by. [CC0 1.0](LICENSES/CC0-1.0.txt)
+<sub>preview shows a personal setup. the character icon and spray are separate from the download.</sub>
+
+<sub>Portions of the materials used are trademarks and/or copyrighted works of Epic Games, Inc. All rights reserved by Epic. This material is not official and is not endorsed by Epic.</sub>
