@@ -3,7 +3,7 @@ SPDX-FileCopyrightText: 2026 24by
 SPDX-License-Identifier: CC0-1.0
 -->
 
-# chapter one lobby
+# genuinely why not lol
 
 ![chapter one lobby preview](preview.png)
 
