@@ -1,0 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2026 24by
+SPDX-License-Identifier: CC0-1.0
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+  <path d="M4 2h19l-2 20H1z" fill="#142453" stroke="#95F2C1" stroke-width="1"/>
+  <path d="M19 12a7 7 0 1 1-14 0 7 7 0 0 1 14 0zM5 12h14M12 5c-4 4-4 10 0 14m0-14c4 4 4 10 0 14" fill="none" stroke="#95F2C1" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

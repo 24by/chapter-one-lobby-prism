@@ -14,24 +14,29 @@ if (-not $PrismDir) {
 
 $theme = Join-Path $PSScriptRoot 'themes/Chapter-One-Lobby'
 $icons = Join-Path $PSScriptRoot 'icons/Chapter-One-Lobby'
+$controls = @(Get-ChildItem -LiteralPath (Join-Path $theme 'resources') -Filter '*.svg' -File)
 $glyphs = @(Get-ChildItem -LiteralPath (Join-Path $icons 'scalable') -Filter '*.svg' -File)
 $themeFiles = @(
     Get-Item -LiteralPath (Join-Path $theme 'theme.json')
     Get-Item -LiteralPath (Join-Path $theme 'themeStyle.css')
 )
 $index = Get-Item -LiteralPath (Join-Path $icons 'index.theme')
-if ($glyphs.Count -eq 0) {
-    throw 'No icons found. Extract the entire ZIP before running install.ps1.'
+if ($controls.Count -eq 0 -or $glyphs.Count -eq 0) {
+    throw 'Extract the entire ZIP before running install.ps1.'
 }
 
 $themeTarget = Join-Path $PrismDir 'themes/Chapter-One-Lobby'
 $iconTarget = Join-Path $PrismDir 'iconthemes/Chapter-One-Lobby'
 $glyphTarget = Join-Path $iconTarget 'scalable'
-$null = [IO.Directory]::CreateDirectory($themeTarget)
+$controlTarget = Join-Path $themeTarget 'resources'
+$null = [IO.Directory]::CreateDirectory($controlTarget)
 $null = [IO.Directory]::CreateDirectory($glyphTarget)
 
 foreach ($file in $themeFiles) {
     [IO.File]::Copy($file.FullName, (Join-Path $themeTarget $file.Name), $true)
+}
+foreach ($file in $controls) {
+    [IO.File]::Copy($file.FullName, (Join-Path $controlTarget $file.Name), $true)
 }
 [IO.File]::Copy($index.FullName, (Join-Path $iconTarget $index.Name), $true)
 foreach ($file in $glyphs) {
